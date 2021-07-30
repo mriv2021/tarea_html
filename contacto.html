@@ -4,9 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CONTACTO</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style> 
+        input:focus {
+            outline: none;
+         }
+
+        input:focus:invalid {
+            border: 3px solid red;
+        }
+
+        input:focus:valid {
+            border: 3px solid green;
+        }
+
+        textarea:focus{
+            outline: none;
+        }
+
+        textarea:focus:invalid {
+             border: 3px solid red;
+         }
+        textarea:focus:valid {
+              border: 3px solid green;
+          }
+    </style>
 </head>
+
+
 <body>
-    
+    <header style=""> <!-- EMPIEZA HEADER!!!!!-->
+        <a href="./"><strong>LOGO</strong></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="deportes.html"> DEPORTES</a>
+                </li>
+                <li>
+                    <a href="humor.html"> HUMOR</a>
+                </li>
+                <li>
+                    <a href="espectaculos.html"> ESPECTÁCULO</a>
+                </li>
+                <li>
+                    <a href="contacto.html"> CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>  <!-- !!!!!TERMINA HEADER!!!!!!!!!!!!!!!!!!!! -->
+
+    <main>
+        <h1> CONTACTO</h1>
+        <section>
+        <form> 
+            <div>
+                <label for="name"><!-- aquí podría escribir Nombre y Apellido --></label> 
+                <input minlength="5" maxlength="20" id="name" name="name" placeholder="Nombre y Apellido" type="text" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="age"></label>
+                <input id="age" name="age" placeholder="Edad" minlength="2" types="numer"required>
+            </div>
+            <br>
+
+            <div>
+                <label for="email" ></label> 
+                <input id="email"name="email" placeholder="Ingrese su correo" type="email"required>
+            </div>
+            <br>
+            <!-- <div>
+                <label for="password" PASSWORD ></label> 
+                <input  minlength="6" maxlength="10"  id="password"name="password" placeholder="INGRESA PASSWORD" type="password">
+            </div> -->
+            <div>
+                <h2>País</h2>
+                <select name="" id="" required>
+                <option value="">SELECCIONAR</option>
+                <option value="1">Perú</option>
+                <option value="2">Colombia</option> 
+                <option value="3">Argentina</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <h2>Sexo</h2>
+                <input type="radio" name="sex" id="sexf" checked><label for="sexf">F</label>
+                <input type="radio" name="sex" id="sexm"><label for="sexm">M</label>
+            </div>
+            <br>
+            
+            <div>
+                <h2>Intereses</h2>
+                <input type="checkbox" id="tech" value="tech"checked><label for="tech">Tecnología</label>
+                <input type="checkbox" id="politic" value="politic"checked><label for="politic">Política</label>
+                <input type="checkbox" id="fashion" value="fashion"checked><label for="fashion">Moda</label>
+            </div>
+            <br>
+
+            <div>
+                <!-- <h2>COMENTARIOS</h2> -->  <!-- Como título-->
+                <div>
+                    <label for="comment"> <!-- Comentario --></label> <!-- título más pequeño sobre la caja de coment.-->
+                </div>
+                 
+
+                <textarea name="textarea"id="comment" rows="5" cols="10" pattern="[A-Za-z0-9]+" maxlength="0" placeholder="Comentarios" required></textarea> 
+                </textarea> 
+            <br>
+            <br>
+
+            <div>
+                <button type="submit">REGISTRAR</button>
+                <button type="reset">LIMPIAR</button>   
+            </div>
+            <!-- FIN FORMULARIO-->
+
+            <section>
+                <h2>UBÍCANOS</h2>
+                <p>Dirección: Av. La Marina 3010 San Miguel</p>
+                <p>Lima - Perú</p>
+                <p>Teléfono: 422-6190</p>
+                <br>
+                <br>
+                <img src="https://picsum.photos/200/300?random1" alt="uno"/>
+            </section>
+
+            <footer>
+                <p> Todos los derechos reservados - 2021</p> 
+                <p>Desarrollado por CodiGO</p>
+            </footer>
+
+       
+
+
+        </form>
+    </section>
+    </main>
+
+
 </body>
 </html>
